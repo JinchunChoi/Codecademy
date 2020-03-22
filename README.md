@@ -9,3 +9,4 @@ Codecademy Projects
 # SQL-intermediate project
 * How to Hack Hacker News
 * The Metropolitan Museum of Art
+* Cryptocurrency Exchange
