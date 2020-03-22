@@ -1,0 +1,49 @@
+ -- select *
+ -- from met
+ -- limit 10;
+ 
+ -- select count(*)
+ -- from met;
+ 
+ -- select count(*)
+ -- from met
+ -- where category
+ -- like '%celery%';
+ 
+--  select min(date)
+--  from met;
+ 
+--  select date, title, medium
+--  from met
+--  where date like '%1600%';
+
+-- select country, count(*)
+-- from met
+-- where country is not null
+-- group by 1
+-- order by 2 desc
+-- limit 10;
+
+-- select category, count(*)
+-- from met
+-- group by 1
+-- having count(*) > 100;
+
+-- select medium, count(*)
+-- from met
+-- where medium like '%gold%' or
+-- medium like '%silver'
+-- group by 1
+-- order by 2 desc
+-- limit 10;
+
+-- select case
+-- when medium like '%gold%' then 'Gold'
+-- when medium like '%silver%' then 'Silver'
+-- else null
+-- end as 'Bling',
+-- count(*)
+-- from met
+-- where Bling is not null
+-- group by 1
+-- order by 2 desc;
