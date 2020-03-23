@@ -1,0 +1,43 @@
+-- select count(*)
+-- from countries
+-- where continent = 'Africa';
+
+-- select sum(population_years.population)
+-- from population_years
+-- join countries
+-- on countries.id = population_years.country_id
+-- where countries.continent = 'Oceania'
+-- and population_years.year;
+
+-- select avg(population_years.population)
+-- from population_years
+-- join countries
+-- on countries.id = population_years.country_id
+-- where countries.continent = 'South America'
+-- and population_years.year = 2003;
+
+-- select countries.name
+-- from population_years
+-- join countries
+-- on countries.id = population_years.country_id
+-- where population_years.year = 2007
+-- order by population_years.population
+-- limit 1;
+
+-- select avg(population_years.population)
+-- from population_years
+-- join countries
+-- on countries.id = population_years.country_id
+-- where population_years.year between 2000 and 2010
+-- and countries.name = 'Poland';
+
+-- select name
+-- from countries
+-- where name like '%The%';
+
+-- select countries.continent, round(sum(population_years.population),2)
+-- from population_years
+-- join countries
+-- on countries.id = population_years.country_id
+-- where population_years.year = 2010
+-- group by countries.continent;
