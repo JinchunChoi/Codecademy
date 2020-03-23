@@ -11,3 +11,4 @@ Codecademy Projects
 * The Metropolitan Museum of Art
 * Cryptocurrency Exchange
 * Multiple Tables with REBU
+* World Populations SQL Practice II
