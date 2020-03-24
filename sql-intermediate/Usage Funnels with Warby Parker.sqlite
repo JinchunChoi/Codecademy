@@ -1,0 +1,103 @@
+ -- select *
+ -- from survey
+ -- limit 10;
+ 
+--  select question, count(distinct user_id)
+--  from survey
+--  group by question
+--  limit 10;
+ 
+--  select count(distinct user_id)
+--  from survey;
+
+-- select *
+-- from quiz
+-- limit 5;
+
+-- select *
+-- from home_try_on
+-- limit 5;
+
+-- select *
+-- from purchase
+-- limit 5;
+
+-- select distinct q.user_id,
+-- h.user_id is not null as 'is_home_try_on',
+-- h.number_of_pairs,
+-- p.user_id is not null as 'is_purchase'
+-- from quiz as q
+-- left join home_try_on as h
+-- on q.user_id = h.user_id
+-- left join purchase as p
+-- on q.user_id = p.user_id
+-- limit 10;
+
+
+-- not working
+
+-- WITH funnels AS (
+--   select distinct q.user_id,
+-- h.user_id is not null as 'is_home_try_on',
+-- h.number_of_pairs,
+-- p.user_id is not null as 'is_purchase'
+-- from quiz as q
+-- left join home_try_on as h
+-- on q.user_id = h.user_id
+-- left join purchase as p
+-- on q.user_id = p.user_id)
+-- SELECT COUNT(*) AS 'num_browse',
+--    SUM(is_home_try_on) AS 'num_home_try_on',
+--    SUM(is_purchase) AS 'num_purchase',
+--    1.0 * SUM(is_home_try_on) / COUNT(user_id) AS 'browse_to_home_try_on',
+--    1.0 * SUM(is_purchase) / SUM(is_home_try_on) AS 'checkout_to_purchase'
+-- FROM funnels
+-- group by 1
+-- order by 1;
+
+
+-- with q as (
+-- select '1-quiz' as stage, count(distinct user_id)
+-- from quiz
+-- ),
+-- h as (
+-- select '2-home-try-on' as stage, count(distinct user_id)
+-- from home_try_on
+-- ),
+-- p as (
+-- select '3-purchase' as stage, count(distinct user_id)
+-- from purchase
+-- )
+-- select *
+-- from q
+-- union
+-- select *
+-- from h
+-- union
+-- select *
+-- from p;
+
+-- with base_table as (
+-- select distinct q.user_id,
+--   h.user_id is not null as 'is_home_try_on',
+--   h.number_of_pairs as 'AB_variant',
+--   p.user_id is not null as 'is_purchase'
+--   from quiz q
+--   left join home_try_on h
+--   on q.user_id = h.user_id
+--   left join purchase p
+--   on q.user_id = p.user_id
+-- )
+-- select AB_variant,
+-- sum(case when is_home_try_on = 1
+--    then 1
+--    else 0
+--    end) 'home_trial',
+-- sum(case when is_purchase = 1
+--    then 1
+--    else 0
+--    end) 'purchase'
+-- from base_table
+-- group by AB_variant
+-- having home_trial > 0;
+
