@@ -12,4 +12,6 @@ Codecademy Projects
 * Cryptocurrency Exchange
 * Multiple Tables with REBU
 * World Populations SQL Practice II
+
+# Analyze Real Data with SQL
 * Usage Funnels with Warby Parker
