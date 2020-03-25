@@ -16,3 +16,4 @@ Codecademy Projects
 # Analyze Real Data with SQL
 * Usage Funnels with Warby Parker
 * Calculating Churn 
+* Calculating Churn Rates
