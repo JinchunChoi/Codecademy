@@ -25,3 +25,6 @@ Codecademy Projects
 * Getting Ready for Physics Class
 * Sal's Shipping
 * Python Gradebook
+
+# Python Lists and Loops
+* Len's Slice
