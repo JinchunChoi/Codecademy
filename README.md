@@ -23,3 +23,4 @@ Codecademy Projects
 # Python Functions and Logic
 * Create Purchasing Information and Receipts for Lovely Loveseats
 * Getting Ready for Physics Class
+* Sal's Shipping
