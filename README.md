@@ -18,7 +18,4 @@ Codecademy Projects
 * Calculating Churn 
 * Calculating Churn Rates
 * First and Last Touch Attribution
-
-# Marketing Attribution
-*
-*
+* Attribution Queries
