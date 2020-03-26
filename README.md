@@ -28,3 +28,4 @@ Codecademy Projects
 
 # Python Lists and Loops
 * Len's Slice
+* Carly's Clippers
