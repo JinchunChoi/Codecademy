@@ -24,3 +24,4 @@ Codecademy Projects
 * Create Purchasing Information and Receipts for Lovely Loveseats
 * Getting Ready for Physics Class
 * Sal's Shipping
+* Python Gradebook
