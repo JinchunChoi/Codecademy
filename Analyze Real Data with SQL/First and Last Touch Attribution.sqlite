@@ -1,0 +1,54 @@
+ -- select *
+ -- from page_visits
+ -- limit 10;
+ 
+ -- select *
+ -- from page_visits
+ -- where user_id = 10069 and
+ -- utm_source = 'buzzfeed';
+ 
+ -- select *
+ -- from page_visits
+ -- where user_id = 10069;
+ 
+  -- select *
+  -- from page_visits
+  -- where user_id = 10329;
+  
+  -- select user_id,
+  -- min(timestamp) as 'first_touch_at'
+  -- from page_visits
+  -- group by 1;
+  
+  -- select user_id,
+  -- max(timestamp) as 'last_touch_at'
+  -- from page_visits
+  -- where user_id = 10069
+  -- group by 1;
+  
+  -- with first_touch as (
+  -- select user_id,
+  --   min(timestamp) as 'first_touch_at'
+  --   from page_visits
+  --   group by user_id)
+  -- select ft.user_id, 
+  -- ft.first_touch_at,
+  -- pv.utm_source
+  -- from first_touch as 'ft'
+  -- join page_visits as 'pv'
+  -- on ft.user_id = pv.user_id
+  -- and ft.first_touch_at = pv.timestamp;
+  
+    with last_touch as (
+  select user_id,
+    max(timestamp) as 'last_touch_at'
+    from page_visits
+    group by user_id)
+  select lt.user_id, 
+  lt.last_touch_at,
+  pv.utm_source
+  from last_touch as 'lt'
+  join page_visits as 'pv'
+  on lt.user_id = pv.user_id
+  and lt.last_touch_at = pv.timestamp
+  where pv.user_id = 10069;
