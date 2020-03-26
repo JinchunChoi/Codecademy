@@ -19,3 +19,7 @@ Codecademy Projects
 * Calculating Churn Rates
 * First and Last Touch Attribution
 * Attribution Queries
+
+# Python Functions and Logic
+* Create Purchasing Information and Receipts for Lovely Loveseats
+* Getting Ready for Physics Class
