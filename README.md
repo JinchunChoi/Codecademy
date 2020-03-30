@@ -33,4 +33,6 @@ Codecademy Projects
 
 # Data Analysis with Pandas
 * Petal Power Inventory
+* A-B Testing for ShoeFly.com.py
+* This Is Jeopardy!
 
