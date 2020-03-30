@@ -30,3 +30,7 @@ Codecademy Projects
 * Len's Slice
 * Carly's Clippers
 * Reggie's Linear Regression
+
+# Data Analysis with Pandas
+* Petal Power Inventory
+
