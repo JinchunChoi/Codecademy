@@ -35,4 +35,4 @@ Codecademy Projects
 * Petal Power Inventory
 * A-B Testing for ShoeFly.com.py
 * This Is Jeopardy!
-
+* Page Visits Funnel
