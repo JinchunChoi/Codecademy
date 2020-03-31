@@ -1,5 +1,5 @@
 # Codecademy
-Codecademy Projects
+Codecademy Projects (Data Science)
 
 # SQL-basic project
 * RPA Fraud Detection
@@ -36,3 +36,6 @@ Codecademy Projects
 * A-B Testing for ShoeFly.com.py
 * This Is Jeopardy!
 * Page Visits Funnel
+
+# Data Visualization
+* Sublime Limes' Line Graphs
