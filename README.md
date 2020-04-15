@@ -40,4 +40,5 @@ Codecademy Projects (Data Science)
 # Data Visualization
 * Sublime Limes' Line Graphs
 * Roller Coaster
-
+* Recreate Graphs Using Matplotlib
+* Constellation
